@@ -11,46 +11,71 @@ You may want to know how to develop such a starter by your own! This starter is 
 ### Features
 
 - 2 Content types: Article, Category
+- 2 Created articles
+- 3 Created categories
 - Permissions set to `true` for article and category
 - Responsive design using UIkit
 
 ### Pages
 
 - "/" display every articles
-- "/articles/:id" display one article
+- "/article/:id" display one article
 - "/category/:id" display articles depending on the category
 
 ### Getting started
 
 **Clone the repository and install dependencies**
 
-```
+```bash
 git clone https://github.com/strapi/strapi-starter-gatsby-blog.git
 cd strapi-starter-gatsby-blog
-yarn setup
+
+# Using yarn
+yarn setup:yarn
+
+# Using npm
+npm run setup:npm
 ```
 
-### Run your Strapi backend
+### Scaffold your project
 
+This command will launch both of your backend and frontend server and do a data migration in your backend server
+
+```bash
+# Using yarn
+yarn develop:yarn
+
+# Using npm
+npm run develop:npm
 ```
+
+Alternatively, you can still start your servers separately:
+
+### Start the backend server
+
+```bash
 cd backend
-strapi dev
+
+# Using yarn
+yarn develop
+
+# Using npm
+npm run develop
 ```
 
-Server is running here => [http://localhost:1337](http://localhost:1337)
+### Start the frontend server
 
-### Run your Gatsby frontend
-
-```
+```bash
 cd frontend
-gatsby develop
+
+# Using yarn
+yarn develop
+
+# Using npm
+npm run develop
 ```
 
-Server is running here => [http://localhost:8000](http://localhost:8000)
-
-### What you need to do
-
-Create your admin user and after that you'll only need to create your articles and your categories
-To do this, head to your strapi admin panel just right here => [http://localhost:1337/admin](http://localhost:1337/admin)
+Gatsby server is running here => [http://localhost:8000](http://localhost:8000)
+Strapi server is running here => [http://localhost:1337](http://localhost:1337)
 
 Enjoy this starter
