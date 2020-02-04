@@ -3,7 +3,11 @@
     "setup:npm": "npm install && npm-run-all -p setup:npm:*",
     "setup:npm:backend": "cd backend && npm install",
     "setup:npm:frontend": "cd frontend && npm install",
+<<<<<<< HEAD
     "develop:npm": "npm run seed:npm && npm-run-all -p develop:npm:*",
+=======
+    "develop:npm": "yarn seed:yarn && npm-run-all -p develop:npm:*",
+>>>>>>> 3cd48aec17eff3799b78f965cc55280c56dac493
     "develop:npm:backend": "cd backend && npm run develop",
     "develop:npm:frontend": "cd frontend && npm run develop",
     "setup:yarn": "yarn && npm-run-all -p setup:yarn:*",
