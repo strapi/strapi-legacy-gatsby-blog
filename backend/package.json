@@ -12,8 +12,9 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "cryptiles": "^4.1.3",
     "fs": "^0.0.1-security",
-    "knex": "<0.20.0",
+    "knex": "0.20.4",
     "path": "^0.12.7",
     "rimraf": "^3.0.1",
     "sqlite3": "latest",
@@ -27,6 +28,7 @@
     "strapi-plugin-upload": "3.0.0-beta.18.4",
     "strapi-plugin-users-permissions": "3.0.0-beta.18.4",
     "strapi-utils": "3.0.0-beta.18.4",
+    "tunnel-agent": "^0.6.0",
     "unzip-stream": "^0.3.0"
   },
   "author": {
