@@ -43,9 +43,11 @@ This command will launch both of your backend and frontend server and do a data 
 
 ```bash
 # Using yarn
+yarn build:yarn
 yarn develop:yarn
 
 # Using npm
+npm run build:npm
 npm run develop:npm
 ```
 
@@ -57,9 +59,11 @@ Alternatively, you can still start your servers separately:
 cd backend
 
 # Using yarn
+yarn build
 yarn develop
 
 # Using npm
+npm run build
 npm run develop
 ```
 
