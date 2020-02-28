@@ -110,7 +110,7 @@ Now you'll need to create a Webhook on your strapi server in order to tell Gatsb
 - Open your Strapi admin panel and go to [Webhooks](http://localhost:1337/admin/settings/webhooks)
 - Create a new Webhook with following properties:
   - Name: `Gatsby Cloud`
-  - Url: The Webhook Url Gatsby Cloud provided you in your Gatsby Dashboard Sites. It should be something like this: `https://webhook.gatsbyjs.com/hooks/data_source/...`
+  - Url: The first Webhook Url Gatsby Cloud provide in your Gatsby Dashboard Sites. It should be something like this: `https://webhook.gatsbyjs.com/hooks/data_source/` withouth the `/publish/`
   - Check every Events for `Entry` and `Media`
 
 That's it! Now Strapi will inform Gatsby Cloud to build your Gatsby project everytime you create/update/delete content
