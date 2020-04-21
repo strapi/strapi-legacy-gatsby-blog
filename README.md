@@ -50,7 +50,7 @@ npm run setup:npm
 
 ### Scaffold your project
 
-This command will launch both of your backend and frontend server and do a data migration in your backend server
+This command will launch both of your backend and frontend servers and do a data migration in your backend server
 
 ```bash
 # Using yarn
