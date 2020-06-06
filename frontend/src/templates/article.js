@@ -37,10 +37,10 @@ const Article = ({ data }) => {
 
         <div className="uk-section">
           <div className="uk-container uk-container-small">
-            <ReactMarkdown source={article.content} />
             <p>
               <Moment format="MMM Do YYYY">{article.published_at}</Moment>
             </p>
+            <ReactMarkdown source={article.content} />
           </div>
         </div>
       </div>
