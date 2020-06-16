@@ -1,0 +1,24 @@
+{
+  "name": "strapi-starter-gatsby-blog",
+  "version": "1.0.0",
+  "description": "fast start",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && yarn develop",
+    "develop": "cd frontend && gatsby clean && gatsby develop",
+    "start": "npm run server & npm run develop",
+    "clean": "cd frontend && gatsby clean",
+    "setup": "cd frontend && gatsby clean && gatsby build",
+    "build": "npm run server & npm run setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhamaa/strapi-starter-gatsby-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhamaa/strapi-starter-gatsby-blog/issues"
+  },
+  "homepage": "https://github.com/adhamaa/strapi-starter-gatsby-blog#readme"
+}
