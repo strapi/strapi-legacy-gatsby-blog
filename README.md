@@ -1,8 +1,8 @@
 # Strapi Starter Gatsby Blog
 
-Gatsby starter for creating a static blog with Strapi.
+Gatsby starter for creating a blog with Strapi.
 
-This starter allows you to try Strapi with Gatsby with the example of a simple static blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
+This starter allows you to try Strapi with Gatsby with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
 
 You may want to know how to develop such a starter by your own! This starter is actually the result of this [tutorial](https://strapi.io/blog/build-a-static-blog-with-gatsby-and-strapi)
 
@@ -10,70 +10,28 @@ You may want to know how to develop such a starter by your own! This starter is 
 
 ### Deploy the backend
 
-To deploy this Strapi instance you'll need:
+To deploy the Strapi instance you'll need:
 
 - [An Heroku account](https://signup.heroku.com/) for free
 - [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
 
 Once you have created these accounts you can deploy your instance by clicking on this button
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-gatsby-blog)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-blog)
 
-### Features
+[Here](https://github.com/strapi/strapi-starter-blog) is the repository of the backend of this starter
 
-- 2 Content types: Article, Category
-- 2 Created articles
-- 3 Created categories
-- Permissions set to `true` for article and category
-- Responsive design using UIkit
+### Deploy the frontend
 
-### Pages
+**On Netflify**
 
-- "/" display every articles
-- "/article/:id" display one article
-- "/category/:id" display articles depending on the category
+Coming soon...
 
-### Getting started
+**On Vercel**
 
-**Clone the repository and install dependencies**
+Coming soon...
 
-```bash
-git clone https://github.com/strapi/strapi-starter-gatsby-blog.git
-cd strapi-starter-gatsby-blog
-```
-
-### Start the backend server
-
-```bash
-cd backend
-
-# Using yarn
-yarn
-yarn develop
-
-# Using npm
-npm install
-npm run develop
-```
-
-### Start the frontend server
-
-```bash
-cd frontend
-
-# Using yarn
-yarn
-yarn develop
-
-# Using npm
-npm install
-npm run develop
-```
-
-Gatsby server is running here => [http://localhost:8000](http://localhost:8000)
-Strapi server is running here => [http://localhost:1337](http://localhost:1337)
-
-## Gatsby Cloud
+**On Gatsby Cloud**
 
 You may want to deploy this starter frontend on [Gatsby Cloud](https://www.gatsbyjs.com/dashboard) in order to try the Gatsby Preview maybe!
 
@@ -98,7 +56,7 @@ You'll be asked to select the repository you want to use
 
 Now you'll need to create a Webhook on your strapi server in order to tell Gatsby cloud to build your Gatsby project each time your create/update/delete content
 
-- Open your Strapi admin panel and go to [Webhooks](http://localhost:1337/admin/settings/webhooks)
+- Open your Strapi admin panel and go to `/admin/settings/webhooks`
 - Create a new Webhook with following properties:
   - Name: `Gatsby Cloud`
   - Url: The first Webhook Url Gatsby Cloud provide in your Gatsby Dashboard Sites. It should be something like this: `https://webhook.gatsbyjs.com/hooks/data_source/` without the `/publish/`
@@ -106,6 +64,45 @@ Now you'll need to create a Webhook on your strapi server in order to tell Gatsb
 
 That's it! Now Strapi will inform Gatsby Cloud to build your Gatsby project everytime you create/update/delete content
 
-![Env](/medias/gif.gif)
+### Features
+
+- 2 Content types: Article, Category
+- 2 Created articles
+- 3 Created categories
+- Permissions set to `true` for article and category
+- Responsive design using UIkit
+
+### Pages
+
+- "/" display every articles
+- "/article/:id" display one article
+- "/category/:id" display articles depending on the category
+
+### Getting started
+
+**Backend**
+
+See full instructions [here](https://github.com/strapi/strapi-starter-blog)
+
+**Frontend**
+
+```bash
+git clone https://github.com/strapi/strapi-starter-gatsby-blog.git
+cd strapi-starter-gatsby-blog
+```
+
+#### Start the frontend server
+
+```bash
+# Using yarn
+yarn install
+yarn develop
+
+# Using npm
+npm install
+npm run develop
+```
+
+Gatsby server is running here => [http://localhost:8000](http://localhost:8000)
 
 Enjoy this starter
