@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/article/${article.node.title}`,
       component: require.resolve("./src/templates/article.js"),
       context: {
-        id: article.node.title,
+        id: article.node.strapiId,
       },
     })
   })
@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/category/${category.node.name}`,
       component: require.resolve("./src/templates/category.js"),
       context: {
-        id: category.node.name,
+        id: category.node.strapiId,
       },
     })
   })
