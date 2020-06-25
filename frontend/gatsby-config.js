@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL
+        apiURL: process.env.DEPLOY_URL
           ? "https://cms-strapi-gatsby.herokuapp.com"
           : "http://localhost:1337",
         contentTypes: [
