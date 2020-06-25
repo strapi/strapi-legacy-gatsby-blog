@@ -8,7 +8,7 @@ const Nav = () => (
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
-              <Link to="/">Strapi Blog</Link>
+              <Link to="/">CEKADEK.COM</Link>
             </li>
           </ul>
         </div>
@@ -28,11 +28,11 @@ const Nav = () => (
                   }
                 }
               `}
-              render={data =>
+              render={(data) =>
                 data.allStrapiCategory.edges.map((category, i) => {
                   return (
                     <li key={category.node.strapiId}>
-                      <Link to={`/category/${category.node.strapiId}`}>
+                      <Link to={`/category/${category.node.name}`}>
                         {category.node.name}
                       </Link>
                     </li>

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Card = ({ article }) => {
   return (
-    <Link to={`/article/${article.node.strapiId}`} className="uk-link-reset">
+    <Link to={`/article/${article.node.title}`} className="uk-link-reset">
       <div className="uk-card uk-card-muted">
         <div className="uk-card-media-top">
           <img

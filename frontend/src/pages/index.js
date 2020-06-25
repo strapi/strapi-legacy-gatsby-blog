@@ -27,10 +27,10 @@ const IndexPage = () => (
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <div className="uk-section">
           <div className="uk-container uk-container-large">
-            <h1>Strapi blog</h1>
+            <h1>Blog resepi</h1>
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
           </div>
         </div>
