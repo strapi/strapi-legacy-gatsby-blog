@@ -4,4 +4,4 @@
   command = "yarn build"
 
 [template.environment]
-  API_URL = "API_URL"
+  API_URL = "Your Strapi URL without the trailing slash (e.g. https://yourapp.herokuapp.com)"
