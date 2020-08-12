@@ -1,3 +1,4 @@
+**Disclaimer** A new version of this starter is available [here](https://github.com/strapi/strapi-starter-gatsby-blog-v2)
 # Strapi Starter Gatsby Blog
 
 Gatsby starter for creating a blog with Strapi.
