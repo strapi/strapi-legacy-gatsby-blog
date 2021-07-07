@@ -12,7 +12,7 @@ const Articles = ({ articles }) => {
         <div>
           {leftArticles.map((article, i) => {
             return (
-              <Card article={article} key={`article__${article.node.id}`} />
+              <Card article={article} key={`article__${article.node.strapiId}`} />
             )
           })}
         </div>
@@ -20,7 +20,7 @@ const Articles = ({ articles }) => {
           <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
             {rightArticles.map((article, i) => {
               return (
-                <Card article={article} key={`article__${article.node.id}`} />
+                <Card article={article} key={`article__${article.node.strapiId}`} />
               )
             })}
           </div>
